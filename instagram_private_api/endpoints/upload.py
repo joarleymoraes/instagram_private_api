@@ -512,7 +512,7 @@ class UploadEndpointsMixin(object):
         if not to_reel and duration > 60.0:
             raise ValueError('Duration is more than 60s.')
 
-        if to_reel and duration > 15.0:
+        if to_reel and duration > 30.0:
             raise ValueError('Duration is more than 15s.')
 
         max_file_len = 50 * 1024 * 1000
